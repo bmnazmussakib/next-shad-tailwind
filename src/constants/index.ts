@@ -8,13 +8,23 @@ export const NAV_LINKS = [
   { label: "Contact", href: "/contact" },
 ];
 
-export const HERO_CONTENT = {
-  title: "Build Beautiful Interfaces Faster",
-  subtitle: "Craft pixel-perfect, responsive UI with ease using ShadCN, Tailwind CSS, and Next.js",
-  buttonText: "Get Started",
-  buttonLink: "/#features",
-  image: "/assets/images/hero-banner.png",
-};
+export const HERO_CONTENT = [
+  {
+    title: `<span>Build Beautiful</span> <br /> <span>Interfaces Faster</span>`,
+    subtitle: "Craft pixel-perfect, responsive UI with ease using ShadCN, Tailwind CSS, and Next.js",
+    buttonText: "Register",
+    buttonLink: "/#features",
+    image: "/images/illustration.png",
+  },
+  {
+    title: "<span>Lessons and insights</span> <br /> <span>from 8 years</span>",
+    subtitle: "Where to grow your business as a photographer: site or social media?",
+    buttonText: "Register",
+    buttonLink: "/#features",
+    image: "/images/illustration.png",
+  },
+];
+
 
 export const FEATURES = [
   {

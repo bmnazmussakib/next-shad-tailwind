@@ -14,17 +14,23 @@ import {
 import Link from "next/link";
 import { NAV_LINKS } from "@/constants";
 import { Button } from "../ui/button";
+import Image from "next/image";
 
 type Props = {};
 
 const Navbar = (props: Props) => {
     return (
-        <nav className="bg-white shadow-sm sticky top-0 z-50 py-3">
+        <nav className="sticky top-0 z-50 py-4">
             <Container>
                 <div className="flex items-center justify-between">
                     <div>
-                        <Link href="/" className="text-xl font-bold">
-                            MyApp
+                        <Link href="/" className="">
+                            <Image
+                            width={120}
+                            height={10}
+                            objectFit="cover"
+                            priority
+                             src="/images/logo-black.png"/>
                         </Link>
                     </div>
                     <NavigationMenu>
@@ -36,7 +42,7 @@ const Navbar = (props: Props) => {
                                     <NavigationMenuItem key={href}>
                                         <NavigationMenuLink >
                                             <Link href={href}
-                                                className="capitalize text-body-2 hover:text-nexcent-shade-1 font-semibold transition duration-200"
+                                                className="capitalize text-[16px] font-semibold hover:text-nexcent-shade-1  transition duration-200"
                                             >
                                                 {label}
                                             </Link>
@@ -50,8 +56,8 @@ const Navbar = (props: Props) => {
                         <NavigationMenuViewport />
                     </NavigationMenu>
                     <div className="flex space-x-4">
-                        <Link href="/login" className="btn-nexcent btn-nexcent-white btn-nexcent-sm font-medium text-body-2">Login</Link>
-                        <Link href="/login" className="btn-nexcent btn-nexcent-primary btn-nexcent-sm font-medium text-body-2">Sign up</Link>
+                        <Link href="/login" className="btn-nexcent btn-nexcent-white btn-nexcent-sm font-medium text-[16px] font-semibold">Login</Link>
+                        <Link href="/login" className="btn-nexcent btn-nexcent-primary btn-nexcent-sm font-medium text-[16px] font-semibold">Sign up</Link>
                     </div>
                 </div>
             </Container>
